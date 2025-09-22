@@ -8,6 +8,14 @@ public class ClosestPair {
     public static class Point {
         public final double x, y;
         public Point(double x, double y) { this.x = x; this.y = y; }
+
+        @Override
+        public String toString() {
+            return "Point{" +
+                    "x=" + x +
+                    ", y=" + y +
+                    '}';
+        }
     }
 
     public static class Result {
@@ -15,6 +23,15 @@ public class ClosestPair {
         public final double dist;
         public Result(Point p1, Point p2, double dist) {
             this.p1 = p1; this.p2 = p2; this.dist = dist;
+        }
+
+        @Override
+        public String toString() {
+            return "Result{" +
+                    "p1=" + p1 +
+                    ", p2=" + p2 +
+                    ", dist=" + dist +
+                    '}';
         }
     }
 
